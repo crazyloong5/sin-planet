@@ -1,0 +1,9 @@
+#配置服务器
+server:
+  #端口号
+  port: 8888
+spring:
+  datasource:
+    druid:
+      stat-view-servlet:
+        enabled: true
