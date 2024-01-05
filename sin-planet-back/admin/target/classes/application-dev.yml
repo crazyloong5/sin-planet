@@ -125,9 +125,15 @@ springdoc:
   api-docs:
     path: /v3/api-docs
   group-configs:
-    - group: 'default'
+    - group: 'test'
       paths-to-match: '/**'
-      packages-to-scan: com.sin.example
+      packages-to-scan: com.sin.web.test
+    - group: 'admin'
+      paths-to-match: '/**'
+      packages-to-scan: com.sin.web.admin
+    - group: 'user'
+      paths-to-match: '/**'
+      packages-to-scan: com.sin.web.user
 
 ############################  knife4j的增强配置  ####################################
 knife4j:
