@@ -29,8 +29,6 @@
         <hutool.version>5.8.20</hutool.version>
         <durid.version>1.2.21</durid.version>
         <knife4j.version>4.1.0</knife4j.version>
-        <springfox.varsion>3.0.0</springfox.varsion>
-        <springdoc.version>1.6.15</springdoc.version>
         <jaxb.version>2.3.1</jaxb.version>
         <oshi-core.version>6.4.3</oshi-core.version>
         <kaptcha.version>2.3.3</kaptcha.version>
@@ -119,24 +117,6 @@
             </dependency>
 
             <dependency>
-                <groupId>com.github.xiaoymin</groupId>
-                <artifactId>knife4j-openapi3-spring-boot-starter</artifactId>
-                <version>${knife4j.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>io.springfox</groupId>
-                <artifactId>springfox-boot-starter</artifactId>
-                <version>${springfox.varsion}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>org.springdoc</groupId>
-                <artifactId>springdoc-openapi-ui</artifactId>
-                <version>${springdoc.version}</version>
-            </dependency>
-
-            <dependency>
                 <groupId>javax.xml.bind</groupId>
                 <artifactId>jaxb-api</artifactId>
                 <version>${jaxb.version}</version>
@@ -160,7 +140,11 @@
                 <version>${dynamic-datasource.version}</version>
             </dependency>
 
-
+            <dependency>
+                <groupId>com.github.xiaoymin</groupId>
+                <artifactId>knife4j-openapi3-jakarta-spring-boot-starter</artifactId>
+                <version>${knife4j.version}</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
