@@ -1,9 +1,9 @@
 <template>
-  <Login />
+  <RouterView></RouterView>
 </template>
 
 <script setup>
-import Login from "./views/start/Login.vue";
+
 </script>
 
 <style scoped>
