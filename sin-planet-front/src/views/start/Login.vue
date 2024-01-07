@@ -100,6 +100,8 @@
 import { Lock, User } from "@element-plus/icons-vue";
 import mySwitch from "@/utils/mySwitch.js";
 import { onMounted, reactive, ref } from "vue";
+import router from "@/router";
+import { ElMessage } from "element-plus";
 
 const loginForm = reactive({
   username: "",
@@ -131,9 +133,23 @@ onMounted(() => {
   mySwitch();
 });
 
-const login = () => {};
+const login = () => {
+  ElMessage({
+    showClose: true,
+    message: "登陆成功",
+    type: "success",
+  });
 
-const register = () => {};
+  router.push("/article");
+};
+
+const register = () => {
+  ElMessage({
+    showClose: true,
+    message: "注册成功",
+    type: "success",
+  });
+};
 </script>
 
 <style scoped>
